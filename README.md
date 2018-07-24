@@ -118,7 +118,7 @@ The Object Storage service instance should already exist, having been created wh
 
 ### Step 8.  Click the `From URL` tab under `Create Notebook`. Give the notebook a name in the `Name` field, for example `Machine learning with SparkML` and optionally you can give it a description. In the Notebook URL field, use
 
-`https://github.com/mhuchette/ML-lab/blob/master/Breast_Cancer_Predict.ipynb` 
+`https://github.com/mhuchette/ML-lab/blob/master/Breast%20Cancer%20Predict.ipynb` 
 
 In the `Select runtime` field, make sure to select the Spark service, and then click on `Create Notebook`
 
