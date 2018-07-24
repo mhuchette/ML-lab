@@ -6,22 +6,23 @@
 [<img src="https://github.com/mhuchette/ML-lab/blob/master/images/Spark_logo.png" height="100"/>](http://spark.apache.org/)
 [<img src="https://github.com/mhuchette/ML-lab/blob/master/images/jupyter.png" height="150"/>](http://jupyter.org/) 
 
-In this lab we will use Spark ML and Jupyter Notebook to create a model that is capable of classifying breast cancer tumors as malignant or benign. 
+In this lab we will use Spark ML and Jupyter Notebook to create a model that is capable of classifying breast cancer tumors as benign or malignant. 
 
-We will use a data set from the University of California, Irvine (UCI) Machine Learning Repository in order to train and test our breast cancer prediction model. The data set contains measurements of the area, permimeter, concavity, smoothness, and much much of each tumor.
+We will use a data set from the University of California, Irvine (UCI) Machine Learning Repository in order to train and test our breast cancer prediction model. The data set contains measurements of the area, permimeter, concavity, smoothness, and more of each tumor.
 
 ## Objectives:
 Upon completing the lab, you will know how to:
 
 1. Connect to cloud object storage and read data used for machine learning.
 2. Identify labels and transform data.
-3. Conduct feature engineering for algorithm data.
-4. Declare a machine learning model.
-5. Setup the Pipeline for data transforms and training.
-6. Train the data.
-7. Show and evaluate machine learning results.
-8. Automatically tune machine learning results.
-9. Score data and load results into cloud object storage.
+3. Use PixieDust to visualize data
+4. Conduct feature engineering for algorithm data.
+5. Declare a machine learning model.
+6. Setup the Pipeline for data transforms and training.
+7. Train the data.
+8. Show and evaluate machine learning results.
+9. Automatically tune machine learning results.
+10. Score data and load results into cloud object storage.
 
 ## Instructions:  
 
@@ -31,7 +32,7 @@ Upon completing the lab, you will know how to:
 
 > <img src="https://github.com/mhuchette/ML-lab/blob/master/images/Select%20View%20All%20Projects.png"/>
 
-### Step 2.  If you have an existing project from following the signup instructions then select it, and skip to Step 8.  Otherwise, click on `New Project`. 
+### Step 2.  Click on `New Project`. 
 > <img src="https://github.com/mhuchette/ML-lab/blob/master/images/Select%20New%20Project.png"/>
 
 ### Step 3. Enter the project name (eg. Watson Studio Labs), optionally a description, and then click on `Add` in the Storage section. Note if you have already provisioned cloud object storage (you shouldn't see an Add button) , then just click on the `Create` button, and skip to Step 8. 
@@ -56,7 +57,7 @@ Upon completing the lab, you will know how to:
 
 ### Step 8. 
 
-The labs in this Proof of Technology will require the following services to be created and associated with your project. 
+This will require the following services to be created and associated with your project. 
 1. Object Storage
 1. Watson Machine Learning
 1. Apache Spark  
@@ -98,7 +99,7 @@ The Object Storage service instance should already exist, having been created wh
 ### Step 1. Click on the [link](https://github.com/mhuchette/ML-lab/blob/master/cancer_data.csv) and then right click on `Raw` and then click the `Save link as...` and then click `Save` to download the `cancer_data.csv file` to your computer. Don't change the name of the file. 
 <img src="https://github.com/mhuchette/ML-lab/blob/master/images/data.png"/>
 
-### Step 2.  Log into your [Watson Studio](http://datascience.ibm.com/) account, then click Projects in the top menubar and select the project you created at the beginning of this proof of technology.
+### Step 2.  Log into your [Watson Studio](http://datascience.ibm.com/) account, then click Projects in the top menubar and select the project you created at the beginning of this lab.
 <img src="https://github.com/mhuchette/ML-lab/blob/master/images/Select%20Project.png"/>
 
 ### Step 3.  Click the `Add to project > Data Asset` link in the top right of your project pane. 
